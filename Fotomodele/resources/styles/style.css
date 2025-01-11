@@ -1,0 +1,73 @@
+/* General body styles */
+body {
+    margin: 0;
+    padding: 0;
+    /* background-image: url('images/background.jpg'); */
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Container for categories */
+.table-buttons {
+    display: flex;
+    justify-content: center; /* Align categories in the center */
+    flex-wrap: wrap; /* Wrap to the next line if necessary */
+    gap: 20px; /* Space between categories */
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* Individual category styling */
+.category {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px; /* Fixed width for consistent layout */
+    text-align: center;
+}
+
+/* Category header styling */
+.category h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #333;
+}
+
+/* Buttons styling */
+button {
+    margin: 10px 0;
+    padding: 10px;
+    width: 200px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover effects */
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Button active state */
+button:active {
+    transform: scale(0.95);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .table-buttons {
+        flex-direction: column; /* Stack categories vertically on small screens */
+        gap: 15px;
+    }
+
+    .category {
+        width: 90%; /* Take most of the screen width */
+    }
+}
